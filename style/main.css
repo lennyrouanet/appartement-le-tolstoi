@@ -1,13 +1,18 @@
 body { margin-top: 50px; font-family: 'Lato', sans-serif; letter-spacing: 1px; font-size: 16px; line-height: 1.4em; font-weight: 300; color: #263238; }
 body a { color: #263238; transition: opacity ease-in-out .25s; }
-body a:hover { opacity: .5; }
+
+@media (hover: hover) {
+	
+	body a:hover { opacity: .5; }
+	
+}
 
 header { position: fixed; z-index: 999; top: 0; left: 0; right: 0; height: 50px; background: #EFEBE9; border-bottom: solid 1px #fff; }
 header nav { display: flex; flex-direction: row; align-items: stretch; align-content: stretch; justify-content: flex-start; width: 1200px; margin: auto; }
 header nav a { padding: 1px 20px 0 20px; line-height: 50px; color: #263238; text-transform: uppercase; font-size: 12px; }
 header nav a:first-child { font-weight: 700; flex-grow: 2; font-size: 14px; }
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1200px) {
 	
 	header nav { width: 100%; }
 	header nav a:not(:first-child):not(:last-child) { display: none; }
@@ -26,7 +31,7 @@ section h2 { margin: 0 0 25px 0; font-size: 50px; line-height: 1.4em; }
 section h3 { margin: 0 0 20px 0; font-size: 28px; line-height: 1.4em; }
 section h4 { font-size: 14px; }
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1200px) {
 	
 	section { padding: 60px 0; }
 	section h1 { font-size: 40px; border-top-width: 3px; border-bottom-width: 3px; }
@@ -58,7 +63,7 @@ section article .bloc h4 { margin-bottom: 10px; }
 
 section.accueil { margin-bottom: 60px; display: flex; flex-direction: column; justify-content: center; height: 60vw; max-height: calc(100vh - 50px); background: #D7CCC8; }
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1200px) {
 	
 	section.accueil { height: calc(100vh - 50px); max-height: calc(100vh - 50px); }
 		
@@ -69,7 +74,7 @@ section.residence article .description { display: flex; flex-direction: row; jus
 section.residence article .description p,
 section.residence article .description dl { width: calc((100% - 40px) / 2); }
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1200px) {
 	
 	section.residence article .description { flex-direction: column; margin-top: 10px; }
 	section.residence article .description p,
@@ -82,11 +87,12 @@ section.appartement article .description { display: flex; flex-direction: row; j
 section.appartement article .description p,
 section.appartement article .description dl { width: calc((100% - 40px) / 2); }
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1200px) {
 	
 	section.appartement article .description { flex-direction: column; margin-top: 10px; }
 	section.appartement article .description p,
 	section.appartement article .description dl { width: auto; margin:10px 20px; }
+	section.appartement article .description p { order: -1; }
 		
 }
 
@@ -98,7 +104,7 @@ section.pieces article .description { width: calc(100% - 800px - 40px); }
 section.pieces article .description p { margin:0; }
 section.pieces article .description dl { margin: 40px 0 0 0; }
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1200px) {
 	
 	section.pieces article { flex-direction: column; }
 	section.pieces article:nth-child(odd) figure { order:inherit; }
@@ -114,7 +120,7 @@ section.environnement article { display: flex; flex-direction: row; flex-wrap: w
 section.environnement article .bloc { width: calc((100% - (2 * 40px)) / 3); }
 section.environnement article .bloc.main { width: 100%; }
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1200px) {
 	
 	section.environnement article { flex-direction: column; }
 	section.environnement article .bloc,
@@ -130,7 +136,7 @@ section.visiter article i { position: absolute; top: -30px; left: calc(50% - 30p
 section.visiter article p { font-size: 20px; line-height: 1.8em; }
 section.visiter article p a {font-weight: 700; }
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1200px) {
 	
 	section.visiter { height: calc(100vh - 50px); max-height: calc(100vh - 50px); }
 	section.visiter h2 { font-size: 22px; }
