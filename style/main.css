@@ -1,0 +1,139 @@
+body { margin-top: 50px; font-family: 'Lato', sans-serif; letter-spacing: 1px; font-size: 16px; line-height: 1.4em; font-weight: 300; color: #263238; }
+body a { color: #263238; transition: opacity ease-in-out .25s; }
+body a:hover { opacity: .5; }
+
+header { position: fixed; z-index: 999; top: 0; left: 0; right: 0; height: 50px; background: #EFEBE9; border-bottom: solid 1px #fff; }
+header nav { display: flex; flex-direction: row; align-items: stretch; align-content: stretch; justify-content: flex-start; width: 1200px; margin: auto; }
+header nav a { padding: 1px 20px 0 20px; line-height: 50px; color: #263238; text-transform: uppercase; font-size: 12px; }
+header nav a:first-child { font-weight: 700; flex-grow: 2; font-size: 14px; }
+
+@media screen and (max-width:1200px){
+	
+	header nav { width: 100%; }
+	header nav a:not(:first-child):not(:last-child) { display: none; }
+	
+}
+
+main {  }
+
+section { display: flex; flex-direction: column; align-items: center; width: 100%; padding: 100px 0; }
+section h1,
+section h2,
+section h3,
+section h4 { font-weight: 700; text-transform: uppercase; }
+section h1 { font-size: 80px; line-height: 1.4em; border-top: solid 5px #263238; border-bottom: solid 5px #263238; }
+section h2 { margin: 0 0 25px 0; font-size: 50px; line-height: 1.4em; }
+section h3 { margin: 0 0 20px 0; font-size: 28px; line-height: 1.4em; }
+section h4 { font-size: 14px; }
+
+@media screen and (max-width:1200px){
+	
+	section { padding: 60px 0; }
+	section h1 { font-size: 40px; border-top-width: 3px; border-bottom-width: 3px; }
+	section h2 { font-size: 30px; }
+	section h3 { font-size: 20px; }
+	section h4 { font-size: 12px; }
+	
+}
+
+section article { width: 100%; max-width: 1200px; margin: 40px 0; }
+section article h3 { width: 100%; text-align: center; }
+section article p {  }
+section article .unit { font-size: .65em; }
+section article sup { vertical-align: super; font-size:.6em; line-height: 1em; }
+section article ul { margin: 0 0 0 20px; }
+section article ul li { position: relative; list-style: none; }
+section article ul li:before { content: "-"; position: absolute; top: 0; left: -1em; width: 1em; opacity: .5; }
+section article dl { width: 100%; max-width: 100%; display: flex; flex-direction: row; flex-wrap: wrap; font-size: 14px; padding: 15px 20px; background: #EFEBE9; }
+section article dl dt,
+section article dl dd { margin: 5px 0; }
+section article dl dt { width: 20px; margin-right: 10px; opacity: .4; text-align: center; }
+section article dl dd { width: calc(100% - 20px - 10px); }
+section article figure { width: 100%; height: auto; }
+section article figure img { display: block; width: 100%; height: auto; }
+section article .description {  }
+section article .description h3 { text-align: left; }
+section article .bloc { font-size: 14px; padding: 20px; margin-bottom: 40px; background: #EFEBE9; }
+section article .bloc h4 { margin-bottom: 10px; }
+
+section.accueil { margin-bottom: 60px; display: flex; flex-direction: column; justify-content: center; height: 60vw; max-height: calc(100vh - 50px); background: #D7CCC8; }
+
+@media screen and (max-width:1200px){
+	
+	section.accueil { height: calc(100vh - 50px); max-height: calc(100vh - 50px); }
+		
+}
+
+section.residence { }
+section.residence article .description { display: flex; flex-direction: row; justify-content: space-between; margin-top: 40px; }
+section.residence article .description p,
+section.residence article .description dl { width: calc((100% - 40px) / 2); }
+
+@media screen and (max-width:1200px){
+	
+	section.residence article .description { flex-direction: column; margin-top: 10px; }
+	section.residence article .description p,
+	section.residence article .description dl { width: auto; margin: 10px 20px; }
+		
+}
+
+section.appartement { }
+section.appartement article .description { display: flex; flex-direction: row; justify-content: space-between; margin-top: 40px; }
+section.appartement article .description p,
+section.appartement article .description dl { width: calc((100% - 40px) / 2); }
+
+@media screen and (max-width:1200px){
+	
+	section.appartement article .description { flex-direction: column; margin-top: 10px; }
+	section.appartement article .description p,
+	section.appartement article .description dl { width: auto; margin:10px 20px; }
+		
+}
+
+section.pieces { }
+section.pieces article { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; }
+section.pieces article:nth-child(odd) figure { order:3; }
+section.pieces article figure { width: 800px; }
+section.pieces article .description { width: calc(100% - 800px - 40px); }
+section.pieces article .description p { margin:0; }
+section.pieces article .description dl { margin: 40px 0 0 0; }
+
+@media screen and (max-width:1200px){
+	
+	section.pieces article { flex-direction: column; }
+	section.pieces article:nth-child(odd) figure { order:inherit; }
+	section.pieces article figure { width: auto; }
+	section.pieces article .description { width: auto; margin: 20px; }
+		
+}
+
+section.residence { }
+
+section.environnement { }
+section.environnement article { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; }
+section.environnement article .bloc { width: calc((100% - (2 * 40px)) / 3); }
+section.environnement article .bloc.main { width: 100%; }
+
+@media screen and (max-width:1200px){
+	
+	section.environnement article { flex-direction: column; }
+	section.environnement article .bloc,
+	section.environnement article .bloc.main { width: auto; margin:10px 20px; }
+		
+}
+
+section.visiter { margin-top: 60px; display: flex; flex-direction: column; justify-content: center; text-align: center; height: 60vw; max-height: calc(100vh - 50px); background: #D7CCC8; }
+section.visiter h2 { margin:0; font-size: 40px; line-height: 1.4em; }
+section.visiter h2 span { display: block; font-size: 20px; }
+section.visiter article { position: relative; width:max-content; margin: 40px auto 0 auto; border:solid 2px #fff; padding: 40px 80px 20px 80px; }
+section.visiter article i { position: absolute; top: -30px; left: calc(50% - 30px); width: 60px; height: 60px; line-height: 60px; text-align: center; font-size: 25px; margin-bottom: 20px; background: #D7CCC8; border:solid 2px #fff; border-radius: 50%; }
+section.visiter article p { font-size: 20px; line-height: 1.8em; }
+section.visiter article p a {font-weight: 700; }
+
+@media screen and (max-width:1200px){
+	
+	section.visiter { height: calc(100vh - 50px); max-height: calc(100vh - 50px); }
+	section.visiter h2 { font-size: 22px; }
+	section.visiter h2 span { font-size: 14px; }
+		
+}
