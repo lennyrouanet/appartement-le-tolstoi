@@ -61,7 +61,7 @@ section article .description h3 { text-align: left; }
 section article .bloc { font-size: 14px; padding: 20px; margin-bottom: 40px; background: #EFEBE9; }
 section article .bloc h4 { margin-bottom: 10px; }
 
-section.accueil { margin-bottom: 60px; display: flex; flex-direction: column; justify-content: center; height: 60vw; max-height: calc(100vh - 50px); background: #D7CCC8; }
+section.accueil { margin-bottom: 60px; display: flex; flex-direction: column; justify-content: center; height: 60vw; max-height: calc(100vh - 50px); background: #D7CCC8 url("bienvenue.jpg") center center no-repeat; background-size: cover; }
 
 @media screen and (max-width:1200px) {
 	
@@ -128,13 +128,13 @@ section.environnement article .bloc.main { width: 100%; }
 		
 }
 
-section.visiter { margin-top: 60px; display: flex; flex-direction: column; justify-content: center; text-align: center; height: 60vw; max-height: calc(100vh - 50px); background: #D7CCC8; }
+section.visiter { margin-top: 60px; display: flex; flex-direction: column; justify-content: center; text-align: center; height: 60vw; max-height: calc(100vh - 50px); background: #D7CCC8 url("contact.jpg") center center no-repeat; background-size: cover; color: #fff; }
 section.visiter h2 { margin:0; font-size: 40px; line-height: 1.4em; }
 section.visiter h2 span { display: block; font-size: 20px; }
 section.visiter article { position: relative; width:max-content; margin: 40px auto 0 auto; border:solid 2px #fff; padding: 40px 80px 20px 80px; }
-section.visiter article i { position: absolute; top: -30px; left: calc(50% - 30px); width: 60px; height: 60px; line-height: 60px; text-align: center; font-size: 25px; margin-bottom: 20px; background: #D7CCC8; border:solid 2px #fff; border-radius: 50%; }
+section.visiter article i { position: absolute; top: -30px; left: calc(50% - 30px); width: 60px; height: 60px; line-height: 60px; text-align: center; font-size: 25px; margin-bottom: 20px; background: #fff; border:solid 2px #fff; border-radius: 50%; color: #263238; }
 section.visiter article p { font-size: 20px; line-height: 1.8em; }
-section.visiter article p a {font-weight: 700; }
+section.visiter article p a {font-weight: 700; color: #fff; }
 
 @media screen and (max-width:1200px) {
 	
